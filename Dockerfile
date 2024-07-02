@@ -27,7 +27,7 @@ RUN npm install -g serve
 COPY --from=builder /app/dist ./dist
 
 # Define a porta de exposição
-EXPOSE 5000
+EXPOSE 3000
 
 # Comando para iniciar o servidor
 CMD ["serve", "-s", "dist", "-l", "5000"]
